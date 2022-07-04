@@ -1,0 +1,104 @@
+/* Color Theme Swatches in Hex*/
+.Beautiful-woman-in-a-colorful-wig-1-hex { color: #248EA6; }
+.Beautiful-woman-in-a-colorful-wig-2-hex { color: #25C7D9; }
+.Beautiful-woman-in-a-colorful-wig-3-hex { color: #F2D338; }
+.Beautiful-woman-in-a-colorful-wig-4-hex { color: #F2622E; }
+.Beautiful-woman-in-a-colorful-wig-5-hex { color: #F23030; }
+
+html{
+    font-family: 'Nunito', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: #248EA6;
+}
+
+.titulo{
+    text-transform: uppercase;
+}
+
+
+
+.container{
+    background: #c94b4b;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #4b134f, #c94b4b);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #4b134f, #c94b4b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    height: 100vh; /*vh representa de 1 a 100 el alto total de la pantalla*/
+    display: flex; /*con flex es una herramienta que permite ubicar los elementos en la pagina*/
+    align-items: center; /*alineamos los elementos al centro*/
+    justify-content: center; 
+
+}
+
+.content{
+    max-width: 960px;
+    max-height: 500px;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23) ;/*Apartados que se llenan para agregar sombra: diferencia horizontal, diferencia vertical, desenfoque, amplitud color*/
+    border-radius: 10px;
+    position: relative;
+}
+.actions{
+    position: absolute;
+    top: 1em;
+    right: 1em;
+}
+
+.close{
+    height: 40px;
+    width: 40px;
+    color: white;
+    border-radius: 50%;
+    background-color:#4b134f ;
+    display: inline-block ;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    font-weight: 300;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.paragraph{
+    line-height: 1.8em;
+    font-weight: 300;
+}
+
+.table{
+    width: 100%;
+    border-spacing:0 ;
+}
+
+.table td, .table th{ /*con esto modificamos a los dos campos td y th de la tabla, para no hacer dos selectores más*/
+    padding: 1em;
+    text-align: left;
+}
+
+.table tr:nth-child(even){/*con esto podemos seleccionar los pares o impares o un linea en especifico. Para par es even, para impar es odd*/
+    background-color: #f3e5f5;
+}
+
+.fa-star, .fa-star-o{
+    color: #F2D338;
+}
+
+.title-items{/*Diseño de titulo de las paginas. Se agrega borde inferior, de ancho 2px, color bonito y espacio de 1em para separar el titulo de la linea*/
+    /* border-bottom-style: solid;
+    border-width: 2px;
+    border-color: #c6424e; */
+    border-bottom: solid 2px #c6426e;/*Esto es un Shorthand Properties es lo mismo que se hizo en 3 lineas pero en una*/
+    padding-bottom: 1em;
+    /*Padding: arriba derecha abajo izquierda. Este es el orden que tiene para agregarle los Shorthand Properties*/
+    /*Padding: arriba/abajo derecha/izquierda. Este es el orden que tiene para agregarle los Shorthand Properties*/
+}
+
+.position{
+    background-color:#c6426e ;
+    color: white;
+    padding: 10px;
+    border-radius: 4px;
+}
