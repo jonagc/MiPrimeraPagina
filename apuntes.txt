@@ -1,0 +1,11 @@
+Configurar servidro web local:
+    Descargar e installar nodejs (web)
+    $npm install -g node-static
+    Ir al directorio del proyecto
+    $static -p 8000     Este entregara la direccion ip o localhost:8000 para cargar pagina web
+
+    localhost es el nick name o etiqueta, para evitar recordar la direccion ip
+    puerto son puntos de entradas donde se pueden comunicar las aplicaciones via la red. Este caso es 8000. Del 0 al 1023 son reservados para el sistema y no se pueden ocupar
+    
+
+
