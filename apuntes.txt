@@ -6,6 +6,135 @@ Configurar servidro web local:
 
     localhost es el nick name o etiqueta, para evitar recordar la direccion ip
     puerto son puntos de entradas donde se pueden comunicar las aplicaciones via la red. Este caso es 8000. Del 0 al 1023 son reservados para el sistema y no se pueden ocupar
-    
 
+Estructura de archivos
+    index.html es el nombre que debe llevar el html para que lo reconozca los navegadores
+    carpeta assets contiene los elementos necesarios para la pagina web 
+        carpeta css va dentro de assets, contiene el codigo css
+        carpeta images va dentro de assets, contiene imagenes de la pagina
+        carpeta scripts va dentro de assets, contiene el codigo de javascripts
+
+Selctores css
+    ayudan a dar formato a ciertos bloques del codigo html
+    utiliza el tag <style>. Dentro de las {} del selector se colocan las propiedas de css
+
+    <style>
+        selector{
+            propiedades:valor
+        }
+    </style>
+    <p>Hola mundo</p>
+
+    El selector puede cambiar el nombre de el tag que se quiere cambiar formato
+
+    <style>
+        p{
+            color:red
+        }
+    </style>
+    <p>Hola mundo</p>
+
+    El selector puede cambiar tambien por el nombre de la class. todas las class que tengan el nombre del selector cambiaran de formato. Esta empieza con unn . y luego el nombre de la class
+
+    <style>
+        .red{
+            bachground-color:black
+            height:200px
+            width:300px
+            color:red
+        }
+    </style>
+    <p>Hola mundo</p>
+    <div class="red">
+
+    </div>
+    <div class="red esta_es_otra_class">        solo puede haber un atributo class="", pero dentro de esta pueden haber muchas clases, solo con una separación(en esta linea esta la clases red y esta_es_otra_class)
+
+    </div>
+
+    El selector puede cambiar el ID. La diferencia con el selector de class, es que el ID es unico, no pueden haber dos ID iguales.
+
+    <style>
+        #boton-pago{
+            color:red
+            background-color:black
+        }
+    </style>
+    <button id="boton-pago" type="button" name="button"></button>
+    <p>Hola mundo</p>
+
+Archivos externos css
+    podemos linkear el archivo de CSS con el html a trves de <link href="./assets/css/main.css" rel="stylesheet"> que va en head
+
+Normalizador CSS
+    Pasa que el formato de CSS tiene valores predefinidos y que cambian segun el equipo donde se visualiza. Esto ayuda que se vea igual en cualquier parte
+    La libreria Normalize.css ayuda con esto. Se debe descargar e instalar. Pero se recomienda usar la direccion online
+
+    Se agrega en html la direccion de esta <link href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" rel="stylesheet">
+    Para hacerlo local en la pagina de Normalize, dar clic derecho sobre el link de Download y guardar link como normalize.css en la carpeta css del proyecto. luego lo importas
+    <link href="./assets/css/normalize.css" rel="stylesheet">
+
+Semantica de etiquetas
+    <img>
+    <button>
+    <video>
+
+    Estas etiquetas entregan la semantica para las personas y otras tecnologias
+    <h1>
+    <selector>
+    <header>
+    <nav>
+    <article>
+    <address>
+
+Tablas
+    Se forman con columnas, filas y celdas
+    Colmnas se forman con la etiqueta  <thead> y dentro de esta van los nombres con la etiqueta <th>
+    <thead>
+        <th>#</th>
+        <th>Nombre</th>
+        <th>Ubicación</th>
+        <th>Calificaciones</th>
+        <th>Acciones</th>
+    </thead>
+
+    Las el cuerpo de la tabla se forma con la etiqueta <tbody> donde van las filas con <thead> y dentro de las filas las celdas con <td>
+    Tiene que haber la misma cantida de celdas o <td> que numero de columnas o <th>
+
+    <table>
+        <thead>
+            <th>#</th>
+            <th>Nombre</th>
+            <th>Ubicación</th>
+            <th>Calificaciones</th>
+            <th>Acciones</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Pizza Hawaina</td>
+                <td>Santiago</td>
+                <td>10</td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+
+Iconos
+    representacion grafica de algo, se pueden agregar con imagenes png, pero se volveria muy lento
+    Los diseñadores usan sprite, es un plano que traen varias imagenes
+    Set de iconos de google o font awesome
+
+    se descarga descomprime y se coloca en la carpeta del proyecto. luego lo linkeamos 
+    ahora para saver el codigo del icono vamos a la pagina donde lo descargamos https://fontawesome-v4.github.io/
+    y buscamos el icono que deseamos y copiamos el codigo el de estrella es <i class="fa fa-star" aria-hidden="true"></i>
+    Y lo pegamos cuantas veces queremos que salga el icono
+
+Organizando el codigo
+    Identacion (4 separaciones)
+    comentarios
+    espacios entre bloques (no definido)
+
+Multiples documentos html
+    
 
